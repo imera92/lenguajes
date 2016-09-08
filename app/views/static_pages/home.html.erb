@@ -4,6 +4,9 @@
 	    <title>Home | Ruby on Rails Tutorial Sample App</title>
 	  </head>
 	  <body>
+	  	<% flash.each do |message_type, message| %>
+        	<div class="alert alert-<%= message_type %>"><%= message %></div>
+      	<% end %>
 	    <section class="container-fluid">
 	    	<div class="row">
 	    		<div class="col-md-10 col-md-offset-1">

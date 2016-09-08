@@ -8,7 +8,8 @@ class TeachersController < ApplicationController
   def create
     @teacher = Teacher.new(teacher_params)
     if @teacher.save
-      # Handle a successful save.
+    	flash[:success] = "Bienvenido a Thinker!"
+       redirect_to root_path
     else
       render 'new'
     end
