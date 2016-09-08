@@ -1,0 +1,23 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <title>Home | Ruby on Rails Tutorial Sample App</title>
+	  </head>
+	  <body>
+	    <section class="container-fluid">
+	    	<div class="row">
+	    		<div class="col-md-10 col-md-offset-1">
+	    			<%= image_tag("thinker.png", alt: "Thinker ESPOL", :class => "img-responsive center-block imgpad") %>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col-md-2 col-md-offset-4">
+	    			<%= link_to "Log in", '#', class: "btn btn-lg btn-primary center-block" %>
+	    		</div>
+	    		<div class="col-md-2">
+	    			<%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary center-block" %>
+	    		</div>
+	    	</div>
+	    </section>
+	  </body>
+	</html>
